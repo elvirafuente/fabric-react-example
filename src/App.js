@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { TextField } from 'office-ui-fabric-react/lib/TextField';
+import { Dropdown } from 'office-ui-fabric-react/lib/Dropdown';
+import List from './components/List'
+import SearchNav from './components/SearchNav'
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	
+	
+	  return (
+		<div className="App">
+			<header>
+				<h1>React Fabric</h1>
+				<SearchNav />
+			</header>
+			<main>
+				<List />
+			</main>
+			
+		</div>
+	);
 }
 
 export default App;
